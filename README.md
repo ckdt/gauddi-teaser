@@ -1,6 +1,6 @@
-# [Skeleton-Sass](http://getskeleton.com)
+# [Gauddi.com Teaser Page](http://gauddi.com)
 
-Skeleton-Sass is the (un)official Sass version of [Dave Gamache's](https://twitter.com/dhg) Skeleton Framework. It currently featues a stable version of Skeleton 2.0.4
+The Gauddi.com teaser pase is based upon skeleton-Sass the (un)official Sass version of the [Dave Gamache's](https://twitter.com/dhg) Skeleton Framework. It currently featues a stable version of Skeleton 2.0.4
 
 -----
 
