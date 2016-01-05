@@ -1,0 +1,123 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// NOTE
+// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// are based on 10px sizing. So basically 1.5rem = 15px :)
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.0em; // currently ems cause chrome bug misinterpreting rems on body element
+  line-height: 1.6;
+  font-family: $font-family;
+  background-color: $primary-color;
+  color: $font-color;
+  @include font-smoothing(on);
+}
+
+.logo{
+  margin-bottom: 1rem;
+  margin-left: -15px;
+}
+
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+  color: $link-color;
+  &:hover {
+    color: darken($link-color, 5%);
+  }
+}
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid $light-grey;
+}
+
+h3{
+  color: $secondary-color;
+}
+
+#countdown{
+  display: inline-block;
+  clear:both;
+  margin-left: -0.5rem;
+
+  .item{
+    float: left;
+    margin-left: 0.5rem;
+    background: white;
+    text-align: center;
+    width: 60px;
+    border-radius: 4px;
+    padding: 10px;
+
+    &.invert{
+      background:$secondary-color;
+
+      .number{
+        color: white;
+      }
+    }
+
+    .number{
+      display: block;
+      width:100%;
+      color: $secondary-color;
+      line-height: 1.2em;
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    .label{
+      padding-top: 0.5rem;
+      color:$dark-grey;
+    }
+  }
+}
+
+@media (#{$bp-larger-than-mobile}) {
+  #countdown{
+    margin-left: -2rem;
+
+    .item{
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+
+.bg{
+ /* background: red;*/
+}
+
+.label{
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+#partners{
+  list-style-type: none;
+  margin: 0;
+  margin-top: 5rem;
+  padding: 0;
+  padding-left:2rem;
+  overflow: hidden;
+  border-left:1px solid $dark-grey;
+  .ptn{
+    margin-bottom: 2.5rem;
+  }
+
+  .label{
+    padding-top: 0.5rem;
+    color:$dark-grey;
+  }
+}

@@ -1,0 +1,45 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Colors
+$light-grey: #e1e1e1 !default;
+$primary-color: #181D3D !default;
+$secondary-color: #59CE8D !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #eee !default;
+
+$dark-grey: lighten($primary-color,20%) !default;
+
+// Typography
+$font-family: "Circular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+//Grid Variables
+$container-width: 960px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 2% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;
+$font-path: "../fonts";
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
